@@ -26,10 +26,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "argprog/argprog/node_modules/bootstrap/dist/css/bootstrap.css"
+              "bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "argprog/argprog/node_modules/bootstrap/dist/js/bootstrap.js"
+              "bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {

@@ -1,0 +1,9 @@
+.row{padding: 15px;}
+
+div{background-color:rgb(184, 182, 182); text-align: center;}
+
+#foto{border-radius: 100%;}
+@media (min-width: 576px){
+    #foto{margin-top: -70%;padding-top: 5px;padding-bottom: 12px;}
+}
+#nombre{font-weight: bolder;}
