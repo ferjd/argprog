@@ -14,6 +14,7 @@ import { AcercaDeComponent } from './comp/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './comp/experiencia/experiencia.component';
 import { EducacionComponent } from './comp/educacion/educacion.component';
 import { HardsoftComponent } from './comp/hardsoft/hardsoft.component';
+import { ProyectComponent } from './comp/proyect/proyect.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HardsoftComponent } from './comp/hardsoft/hardsoft.component';
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HardsoftComponent
+    HardsoftComponent,
+    ProyectComponent
   ],
   imports: [
     BrowserModule,
