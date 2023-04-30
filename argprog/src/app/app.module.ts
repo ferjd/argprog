@@ -8,26 +8,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comp/header/header.component';
 import { AplogoComponent } from './comp/aplogo/aplogo.component';
-import { SocialComponent } from './comp/social/social.component';
 import { BannerComponent } from './comp/banner/banner.component';
 import { AcercaDeComponent } from './comp/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './comp/experiencia/experiencia.component';
 import { EducacionComponent } from './comp/educacion/educacion.component';
 import { HardsoftComponent } from './comp/hardsoft/hardsoft.component';
 import { ProyectComponent } from './comp/proyect/proyect.component';
+import { FooterComponent } from './comp/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AplogoComponent,
-    SocialComponent,
     BannerComponent,
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
     HardsoftComponent,
-    ProyectComponent
+    ProyectComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
