@@ -1,6 +1,0 @@
-com\fer\fer\Entity\Persona.class
-com\fer\fer\FerApplication.class
-com\fer\fer\Interface\IPersonaService.class
-com\fer\fer\Repository\IPersonaRepository.class
-com\fer\fer\Controller\PersonaController.class
-com\fer\fer\Service\ImpPersonaService.class
