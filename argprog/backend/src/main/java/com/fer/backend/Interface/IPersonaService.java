@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author Juan Pablo
+ * @author Fer
  */
 public interface IPersonaService {
     public List<Persona> getPersona();

@@ -16,6 +16,8 @@ import { HardsoftComponent } from './comp/hardsoft/hardsoft.component';
 import { ProyectComponent } from './comp/proyect/proyect.component';
 import { FooterComponent } from './comp/footer/footer.component';
 import { HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './comp/home/home.component';
+import { LoginComponent } from './comp/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { HttpClientModule} from '@angular/common/http';
     EducacionComponent,
     HardsoftComponent,
     ProyectComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

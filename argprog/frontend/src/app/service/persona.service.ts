@@ -13,6 +13,6 @@ export class PersonaService {
    * getPersona 
  */
   public getPersona():Observable<persona> {
-        return this.http.get<persona>(`${this.url}traer/perfil`);
+        return this.http.get<persona>(this.url+'traer/perfil');
   }
 }
