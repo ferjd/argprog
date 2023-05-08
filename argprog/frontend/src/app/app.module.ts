@@ -15,6 +15,7 @@ import { EducacionComponent } from './comp/educacion/educacion.component';
 import { HardsoftComponent } from './comp/hardsoft/hardsoft.component';
 import { ProyectComponent } from './comp/proyect/proyect.component';
 import { FooterComponent } from './comp/footer/footer.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,9 +40,10 @@ import { FooterComponent } from './comp/footer/footer.component';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-    })
+    }),
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]  
 })
 export class AppModule { }
