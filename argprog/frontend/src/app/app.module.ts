@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 /* Import ng-circle-progress*/
 import { NgCircleProgressModule } from 'ng-circle-progress';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comp/header/header.component';
@@ -15,6 +14,9 @@ import { EducacionComponent } from './comp/educacion/educacion.component';
 import { HardsoftComponent } from './comp/hardsoft/hardsoft.component';
 import { ProyectComponent } from './comp/proyect/proyect.component';
 import { FooterComponent } from './comp/footer/footer.component';
+import { HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './comp/home/home.component';
+import { LoginComponent } from './comp/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FooterComponent } from './comp/footer/footer.component';
     EducacionComponent,
     HardsoftComponent,
     ProyectComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -39,9 +43,10 @@ import { FooterComponent } from './comp/footer/footer.component';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
-    })
+    }),
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]  
 })
 export class AppModule { }
