@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 /* Import ng-circle-progress*/
 import { NgCircleProgressModule } from 'ng-circle-progress';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comp/header/header.component';
