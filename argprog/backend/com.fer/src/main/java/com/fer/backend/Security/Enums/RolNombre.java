@@ -7,7 +7,7 @@ package com.fer.backend.Security.Enums;
 
 /**
  *
- * @author Juan Pablo
+ * @author Fer
  */
 public enum RolNombre {
     ROLE_ADMIN, ROLE_USER

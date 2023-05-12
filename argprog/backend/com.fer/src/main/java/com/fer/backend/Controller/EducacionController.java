@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author Juan Pablo
+ * @author Fer
  */
 @RestController
 @RequestMapping("/educacion")

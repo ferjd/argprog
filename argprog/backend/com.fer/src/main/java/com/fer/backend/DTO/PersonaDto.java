@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  *
- * @author Juan Pablo
+ * @author Fer
  */
 public class PersonaDto {
     @NotBlank
