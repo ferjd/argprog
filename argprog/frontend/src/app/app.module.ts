@@ -17,6 +17,7 @@ import { FooterComponent } from './comp/footer/footer.component';
 import { HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './comp/home/home.component';
 import { LoginComponent } from './comp/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { LoginComponent } from './comp/login/login.component';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
