@@ -1,14 +1,31 @@
 <div class="row">
     <h1>Proyectos</h1>
-    <div class="col-lg-11">
-        <ul>
-            <li><h3>PROYECTO 1</h3> - <a href="">link proyecto</a></li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit exercitationem, magnam veniam ut tenetur, ullam temporibus voluptas minus esse facere in. Delectus obcaecati aut neque quasi a quis dolorem.</p>
-        </ul>
-        <ul>
-            <li><h3>PROYECTO 2</h3> - <a href="">link proyecto</a></li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit exercitationem, magnam veniam ut tenetur, ullam temporibus voluptas minus esse facere in. Delectus obcaecati aut neque quasi a quis dolorem.</p>
-        </ul>
-        <ul>
-            <li><h3>PROYECTO 3</h3> - <a href="">link proyecto</a></li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit exercitationem, magnam veniam ut tenetur, ullam temporibus voluptas minus esse facere in. Delectus obcaecati aut neque quasi a quis dolorem.</p>
-        </ul>
+    <div class="col-lg-12">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+            Agregar proyecto
+        </button>
     </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of proyecto">
+                    <td>
+                        <h4>{{Proyecto.nombreP}}</h4>
+                    </td>
+                    <td>{{Proyecto.descripcionP}} - <a href="{{Proyecto.linkP}}">Website</a> </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editproy/{{Proyecto.id}}">
+                            <i class="bi bi-pencil-fill"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>

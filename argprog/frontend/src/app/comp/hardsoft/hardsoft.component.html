@@ -1,98 +1,38 @@
 <div class="row">
-    <h1>Hard and Soft Skills</h1>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="85"
-            [radius]="70"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="600"
-            [showUnits]="false"
-            [title]="'HTML'"
-            [titleFontSize]="'2em'"
-        ></circle-progress>
+
+    <h1>Hard & Soft skills</h1>
+    <div class="col-lg-12">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
     </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="85"
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+        <circle-progress 
+            [percent]="(skill.porcentaje)"
             [radius]="70"
-            [outerStrokeWidth]="12"
+            [outerStrokeWidth]="5"
             [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
+            [outerStrokeColor]="'tan'"
+            [innerStrokeColor]="'maroon'"
             [animation]="true"
+            [responsive]="true"
             [animationDuration]="600"
             [showUnits]="false"
-            [title]="'TS'"
-            [titleFontSize]="'2em'"
-        ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [percent]="85"
-        [radius]="70"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-        [showUnits]="false"
-        [title]="'JAVA'"
-        [titleFontSize]="'2em'"
-    ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="85"
-            [radius]="70"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="600"
-            [showUnits]="false"
-            [title]="'SCRUM'"
+            [title]="(skill.nombre)"
+            [showSubtitle]="false"
             [titleFontSize]="'1.5em'"
         ></circle-progress>
+        <div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                    <i class="bi bi-pencil-fill"></i></button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(skill.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+            </td>
+        </div>
     </div>
+
     
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="85"
-            [radius]="70"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="600"
-            [showUnits]="false"
-            [title]="'TEAM'"
-            [titleFontSize]="'1.5em'"
-        ></circle-progress>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-            [percent]="85"
-            [radius]="70"
-            [outerStrokeWidth]="12"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="600"
-            [showUnits]="false"
-            [title]="'LEAD'"
-            [titleFontSize]="'1.5em'"
-        ></circle-progress>
-    </div>
 </div>

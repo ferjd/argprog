@@ -7,12 +7,22 @@ import { persona } from 'src/app/model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  url='http://localhost:8080/persona/';
-  constructor(private http: HttpClient) { }
-  /**
-   * getPersona 
- */
-  public getPersona():Observable<persona> {
-        return this.http.get<persona>(this.url+'detail/1');
+  URL='http://localhost:8080/persona/';
+
+  constructor(private httpClient : HttpClient) { }
+
+  public lista(): Observable<persona[]>{
+    return this.httpClient.get<persona[]>(this.URL + 'lista');
   }
+
+  public detail(id: number): Observable<persona>{
+    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+  }
+
+  public update(id: number, Persona: persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+  }
+
 }
+  
+
