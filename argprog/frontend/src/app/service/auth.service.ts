@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backendcv-vfg8.onrender.com/auth'
+  authURL = 'https://backendcv-vfg8.onrender.com/auth/'
 
   constructor(private httpClient: HttpClient) {}
 
