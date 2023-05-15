@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/argprog",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

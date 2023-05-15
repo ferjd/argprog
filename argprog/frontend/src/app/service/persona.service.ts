@@ -7,7 +7,7 @@ import { persona } from 'src/app/model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL='http://localhost:8080/persona/';
+  URL='https://backendcv-vfg8.onrender.com/persona/';
 
   constructor(private httpClient : HttpClient) { }
 
