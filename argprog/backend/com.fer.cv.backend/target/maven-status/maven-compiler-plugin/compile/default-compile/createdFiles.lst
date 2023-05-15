@@ -32,6 +32,7 @@ com\fer\backend\Security\jwt\JwtEntryPoint.class
 com\fer\backend\Security\Entity\Rol.class
 com\fer\backend\Repository\IPersonaRepository.class
 com\fer\backend\DTO\PersonaDto.class
+com\fer\backend\WebConfig.class
 com\fer\backend\Service\ExperienciaService.class
 com\fer\backend\Security\Dto\JwtDto.class
 com\fer\backend\Repository\IProyectoRepository.class
